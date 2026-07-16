@@ -13,60 +13,60 @@ No existing tool answered, at the customer × category × SKU level: which custo
 
 Pipeline architecture
 
-#mermaid-r3iv-r3 { font-family: "Anthropic Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 16px; fill: rgb(229, 229, 229); }
-#mermaid-r3iv-r3 .edge-animation-slow { stroke-dashoffset: 900; animation: 50s linear 0s infinite normal none running dash; stroke-linecap: round; stroke-dasharray: 9, 5 !important; }
-#mermaid-r3iv-r3 .edge-animation-fast { stroke-dashoffset: 900; animation: 20s linear 0s infinite normal none running dash; stroke-linecap: round; stroke-dasharray: 9, 5 !important; }
-#mermaid-r3iv-r3 .error-icon { fill: rgb(204, 120, 92); }
-#mermaid-r3iv-r3 .error-text { fill: rgb(51, 135, 163); stroke: rgb(51, 135, 163); }
-#mermaid-r3iv-r3 .edge-thickness-normal { stroke-width: 1px; }
-#mermaid-r3iv-r3 .edge-thickness-thick { stroke-width: 3.5px; }
-#mermaid-r3iv-r3 .edge-pattern-solid { stroke-dasharray: 0; }
-#mermaid-r3iv-r3 .edge-thickness-invisible { stroke-width: 0; fill: none; }
-#mermaid-r3iv-r3 .edge-pattern-dashed { stroke-dasharray: 3; }
-#mermaid-r3iv-r3 .edge-pattern-dotted { stroke-dasharray: 2; }
-#mermaid-r3iv-r3 .marker { fill: rgb(161, 161, 161); stroke: rgb(161, 161, 161); }
-#mermaid-r3iv-r3 .marker.cross { stroke: rgb(161, 161, 161); }
-#mermaid-r3iv-r3 svg { font-family: "Anthropic Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 16px; }
-#mermaid-r3iv-r3 p { margin: 0px; }
-#mermaid-r3iv-r3 .label { font-family: "Anthropic Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: rgb(229, 229, 229); }
-#mermaid-r3iv-r3 .cluster-label text { fill: rgb(51, 135, 163); }
-#mermaid-r3iv-r3 .cluster-label span { color: rgb(51, 135, 163); }
-#mermaid-r3iv-r3 .cluster-label span p { background-color: transparent; }
-#mermaid-r3iv-r3 .label text, #mermaid-r3iv-r3 span { fill: rgb(229, 229, 229); color: rgb(229, 229, 229); }
-#mermaid-r3iv-r3 .node rect, #mermaid-r3iv-r3 .node circle, #mermaid-r3iv-r3 .node ellipse, #mermaid-r3iv-r3 .node polygon, #mermaid-r3iv-r3 .node path { fill: transparent; stroke: rgb(161, 161, 161); stroke-width: 1px; }
-#mermaid-r3iv-r3 .rough-node .label text, #mermaid-r3iv-r3 .node .label text, #mermaid-r3iv-r3 .image-shape .label, #mermaid-r3iv-r3 .icon-shape .label { text-anchor: middle; }
-#mermaid-r3iv-r3 .node .katex path { fill: rgb(0, 0, 0); stroke: rgb(0, 0, 0); stroke-width: 1px; }
-#mermaid-r3iv-r3 .rough-node .label, #mermaid-r3iv-r3 .node .label, #mermaid-r3iv-r3 .image-shape .label, #mermaid-r3iv-r3 .icon-shape .label { text-align: center; }
-#mermaid-r3iv-r3 .node.clickable { cursor: pointer; }
-#mermaid-r3iv-r3 .root .anchor path { stroke-width: 0; stroke: rgb(161, 161, 161); fill: rgb(161, 161, 161) !important; }
-#mermaid-r3iv-r3 .arrowheadPath { fill: rgb(11, 11, 11); }
-#mermaid-r3iv-r3 .edgePath .path { stroke: rgb(161, 161, 161); stroke-width: 1px; }
-#mermaid-r3iv-r3 .flowchart-link { stroke: rgb(161, 161, 161); fill: none; }
-#mermaid-r3iv-r3 .edgeLabel { background-color: transparent; text-align: center; }
-#mermaid-r3iv-r3 .edgeLabel p { background-color: transparent; }
-#mermaid-r3iv-r3 .edgeLabel rect { opacity: 0.5; background-color: transparent; fill: transparent; }
-#mermaid-r3iv-r3 .labelBkg { background-color: rgba(0, 0, 0, 0.5); }
-#mermaid-r3iv-r3 .cluster rect { fill: rgb(204, 120, 92); stroke: rgb(138, 115, 107); stroke-width: 1px; }
-#mermaid-r3iv-r3 .cluster text { fill: rgb(51, 135, 163); }
-#mermaid-r3iv-r3 .cluster span { color: rgb(51, 135, 163); }
-#mermaid-r3iv-r3 div.mermaidTooltip { position: absolute; text-align: center; max-width: 200px; padding: 2px; font-family: "Anthropic Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 12px; background: rgb(204, 120, 92); border: 1px solid rgb(138, 115, 107); border-radius: 2px; pointer-events: none; z-index: 100; }
-#mermaid-r3iv-r3 .flowchartTitleText { text-anchor: middle; font-size: 18px; fill: rgb(229, 229, 229); }
-#mermaid-r3iv-r3 rect.text { fill: none; stroke-width: 0; }
-#mermaid-r3iv-r3 .icon-shape, #mermaid-r3iv-r3 .image-shape { background-color: transparent; text-align: center; }
-#mermaid-r3iv-r3 .icon-shape p, #mermaid-r3iv-r3 .image-shape p { background-color: transparent; padding: 2px; }
-#mermaid-r3iv-r3 .icon-shape .label rect, #mermaid-r3iv-r3 .image-shape .label rect { opacity: 0.5; background-color: transparent; fill: transparent; }
-#mermaid-r3iv-r3 .label-icon { display: inline-block; height: 1em; overflow: visible; vertical-align: -0.125em; }
-#mermaid-r3iv-r3 .node .label-icon path { fill: currentcolor; stroke: revert; stroke-width: revert; }
-#mermaid-r3iv-r3 .node .neo-node { stroke: rgb(161, 161, 161); }
-#mermaid-r3iv-r3 [data-look="neo"].node rect, #mermaid-r3iv-r3 [data-look="neo"].cluster rect, #mermaid-r3iv-r3 [data-look="neo"].node polygon { stroke: url("#mermaid-r3iv-r3-gradient"); filter: drop-shadow(rgb(185, 185, 185) 1px 2px 2px); }
-#mermaid-r3iv-r3 [data-look="neo"].node path { stroke: url("#mermaid-r3iv-r3-gradient"); stroke-width: 1px; }
-#mermaid-r3iv-r3 [data-look="neo"].node .outer-path { filter: drop-shadow(rgb(185, 185, 185) 1px 2px 2px); }
-#mermaid-r3iv-r3 [data-look="neo"].node .neo-line path { stroke: rgb(161, 161, 161); filter: none; }
-#mermaid-r3iv-r3 [data-look="neo"].node circle { stroke: url("#mermaid-r3iv-r3-gradient"); filter: drop-shadow(rgb(185, 185, 185) 1px 2px 2px); }
-#mermaid-r3iv-r3 [data-look="neo"].node circle .state-start { fill: rgb(0, 0, 0); }
-#mermaid-r3iv-r3 [data-look="neo"].icon-shape .icon { fill: url("#mermaid-r3iv-r3-gradient"); filter: drop-shadow(rgb(185, 185, 185) 1px 2px 2px); }
-#mermaid-r3iv-r3 [data-look="neo"].icon-shape .icon-neo path { stroke: url("#mermaid-r3iv-r3-gradient"); filter: drop-shadow(rgb(185, 185, 185) 1px 2px 2px); }
-#mermaid-r3iv-r3 :root { --mermaid-font-family: "Anthropic Sans",system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }OPENQUERY via SQL ServerERP / SAP Business Oneintermediate billing viewExtraction in RTransformationtidyverserecencia_mayoreoresumen_segmentosresumen_cliente_catdetalle_skudinero_mesaventa_mensual_skumargen_mensual_catorden_categoriasPower BIPower Query + DAXPage 1:Salesperson-CustomerPage 2: SalespersonDiagnosticPage 3: Customer DetailPage 4: Category Trend
+#mermaid-r4c2-r6 { font-family: "Anthropic Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 16px; fill: rgb(229, 229, 229); }
+#mermaid-r4c2-r6 .edge-animation-slow { stroke-dashoffset: 900; animation: 50s linear 0s infinite normal none running dash; stroke-linecap: round; stroke-dasharray: 9, 5 !important; }
+#mermaid-r4c2-r6 .edge-animation-fast { stroke-dashoffset: 900; animation: 20s linear 0s infinite normal none running dash; stroke-linecap: round; stroke-dasharray: 9, 5 !important; }
+#mermaid-r4c2-r6 .error-icon { fill: rgb(204, 120, 92); }
+#mermaid-r4c2-r6 .error-text { fill: rgb(51, 135, 163); stroke: rgb(51, 135, 163); }
+#mermaid-r4c2-r6 .edge-thickness-normal { stroke-width: 1px; }
+#mermaid-r4c2-r6 .edge-thickness-thick { stroke-width: 3.5px; }
+#mermaid-r4c2-r6 .edge-pattern-solid { stroke-dasharray: 0; }
+#mermaid-r4c2-r6 .edge-thickness-invisible { stroke-width: 0; fill: none; }
+#mermaid-r4c2-r6 .edge-pattern-dashed { stroke-dasharray: 3; }
+#mermaid-r4c2-r6 .edge-pattern-dotted { stroke-dasharray: 2; }
+#mermaid-r4c2-r6 .marker { fill: rgb(161, 161, 161); stroke: rgb(161, 161, 161); }
+#mermaid-r4c2-r6 .marker.cross { stroke: rgb(161, 161, 161); }
+#mermaid-r4c2-r6 svg { font-family: "Anthropic Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 16px; }
+#mermaid-r4c2-r6 p { margin: 0px; }
+#mermaid-r4c2-r6 .label { font-family: "Anthropic Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: rgb(229, 229, 229); }
+#mermaid-r4c2-r6 .cluster-label text { fill: rgb(51, 135, 163); }
+#mermaid-r4c2-r6 .cluster-label span { color: rgb(51, 135, 163); }
+#mermaid-r4c2-r6 .cluster-label span p { background-color: transparent; }
+#mermaid-r4c2-r6 .label text, #mermaid-r4c2-r6 span { fill: rgb(229, 229, 229); color: rgb(229, 229, 229); }
+#mermaid-r4c2-r6 .node rect, #mermaid-r4c2-r6 .node circle, #mermaid-r4c2-r6 .node ellipse, #mermaid-r4c2-r6 .node polygon, #mermaid-r4c2-r6 .node path { fill: transparent; stroke: rgb(161, 161, 161); stroke-width: 1px; }
+#mermaid-r4c2-r6 .rough-node .label text, #mermaid-r4c2-r6 .node .label text, #mermaid-r4c2-r6 .image-shape .label, #mermaid-r4c2-r6 .icon-shape .label { text-anchor: middle; }
+#mermaid-r4c2-r6 .node .katex path { fill: rgb(0, 0, 0); stroke: rgb(0, 0, 0); stroke-width: 1px; }
+#mermaid-r4c2-r6 .rough-node .label, #mermaid-r4c2-r6 .node .label, #mermaid-r4c2-r6 .image-shape .label, #mermaid-r4c2-r6 .icon-shape .label { text-align: center; }
+#mermaid-r4c2-r6 .node.clickable { cursor: pointer; }
+#mermaid-r4c2-r6 .root .anchor path { stroke-width: 0; stroke: rgb(161, 161, 161); fill: rgb(161, 161, 161) !important; }
+#mermaid-r4c2-r6 .arrowheadPath { fill: rgb(11, 11, 11); }
+#mermaid-r4c2-r6 .edgePath .path { stroke: rgb(161, 161, 161); stroke-width: 1px; }
+#mermaid-r4c2-r6 .flowchart-link { stroke: rgb(161, 161, 161); fill: none; }
+#mermaid-r4c2-r6 .edgeLabel { background-color: transparent; text-align: center; }
+#mermaid-r4c2-r6 .edgeLabel p { background-color: transparent; }
+#mermaid-r4c2-r6 .edgeLabel rect { opacity: 0.5; background-color: transparent; fill: transparent; }
+#mermaid-r4c2-r6 .labelBkg { background-color: rgba(0, 0, 0, 0.5); }
+#mermaid-r4c2-r6 .cluster rect { fill: rgb(204, 120, 92); stroke: rgb(138, 115, 107); stroke-width: 1px; }
+#mermaid-r4c2-r6 .cluster text { fill: rgb(51, 135, 163); }
+#mermaid-r4c2-r6 .cluster span { color: rgb(51, 135, 163); }
+#mermaid-r4c2-r6 div.mermaidTooltip { position: absolute; text-align: center; max-width: 200px; padding: 2px; font-family: "Anthropic Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 12px; background: rgb(204, 120, 92); border: 1px solid rgb(138, 115, 107); border-radius: 2px; pointer-events: none; z-index: 100; }
+#mermaid-r4c2-r6 .flowchartTitleText { text-anchor: middle; font-size: 18px; fill: rgb(229, 229, 229); }
+#mermaid-r4c2-r6 rect.text { fill: none; stroke-width: 0; }
+#mermaid-r4c2-r6 .icon-shape, #mermaid-r4c2-r6 .image-shape { background-color: transparent; text-align: center; }
+#mermaid-r4c2-r6 .icon-shape p, #mermaid-r4c2-r6 .image-shape p { background-color: transparent; padding: 2px; }
+#mermaid-r4c2-r6 .icon-shape .label rect, #mermaid-r4c2-r6 .image-shape .label rect { opacity: 0.5; background-color: transparent; fill: transparent; }
+#mermaid-r4c2-r6 .label-icon { display: inline-block; height: 1em; overflow: visible; vertical-align: -0.125em; }
+#mermaid-r4c2-r6 .node .label-icon path { fill: currentcolor; stroke: revert; stroke-width: revert; }
+#mermaid-r4c2-r6 .node .neo-node { stroke: rgb(161, 161, 161); }
+#mermaid-r4c2-r6 [data-look="neo"].node rect, #mermaid-r4c2-r6 [data-look="neo"].cluster rect, #mermaid-r4c2-r6 [data-look="neo"].node polygon { stroke: url("#mermaid-r4c2-r6-gradient"); filter: drop-shadow(rgb(185, 185, 185) 1px 2px 2px); }
+#mermaid-r4c2-r6 [data-look="neo"].node path { stroke: url("#mermaid-r4c2-r6-gradient"); stroke-width: 1px; }
+#mermaid-r4c2-r6 [data-look="neo"].node .outer-path { filter: drop-shadow(rgb(185, 185, 185) 1px 2px 2px); }
+#mermaid-r4c2-r6 [data-look="neo"].node .neo-line path { stroke: rgb(161, 161, 161); filter: none; }
+#mermaid-r4c2-r6 [data-look="neo"].node circle { stroke: url("#mermaid-r4c2-r6-gradient"); filter: drop-shadow(rgb(185, 185, 185) 1px 2px 2px); }
+#mermaid-r4c2-r6 [data-look="neo"].node circle .state-start { fill: rgb(0, 0, 0); }
+#mermaid-r4c2-r6 [data-look="neo"].icon-shape .icon { fill: url("#mermaid-r4c2-r6-gradient"); filter: drop-shadow(rgb(185, 185, 185) 1px 2px 2px); }
+#mermaid-r4c2-r6 [data-look="neo"].icon-shape .icon-neo path { stroke: url("#mermaid-r4c2-r6-gradient"); filter: drop-shadow(rgb(185, 185, 185) 1px 2px 2px); }
+#mermaid-r4c2-r6 :root { --mermaid-font-family: "Anthropic Sans",system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }OPENQUERY via SQL ServerERP / SAP Business Oneintermediate billing viewExtraction in RTransformationtidyverserecencia_mayoreoresumen_segmentosresumen_cliente_catdetalle_skudinero_mesaventa_mensual_skumargen_mensual_catorden_categoriasPower BIPower Query + DAXPage 1:Salesperson-CustomerPage 2: SalespersonDiagnosticPage 3: Customer DetailPage 4: Category Trend
 
 The R script runs in two versions: a diagnostic version (with validations and exports for review) and a clean version dedicated exclusively to feeding Power Query, with no side effects.
 
